@@ -179,6 +179,31 @@ enum NotificationType {
   PASSWORD_RESET
 }
 
+model Product {
+  id             Int      @id @default(autoincrement())
+  sku            String   @unique
+  category       String
+  name           String
+  nameEn         String
+  nameZh         String
+  price          Decimal  @db.Decimal(10, 2)
+  priceWholesale Decimal  @db.Decimal(10, 2)
+  unit           String
+  minOrder       Int      @default(1)
+  minWholesale   Int      @default(10)
+  desc           String?  @db.Text
+  img            String?
+  stock          Int      @default(0)
+  rating         Decimal  @db.Decimal(3, 1) @default(5.0)
+  sold           Int      @default(0)
+  active         Boolean  @default(true)
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+
+  @@index([category])
+  @@index([active])
+}
+
 enum NotificationChannel {
   EMAIL
   LINE

@@ -127,7 +127,19 @@ function ProductCard({ product, lang, onAdd }) {
       <div style={{ position: "relative", paddingTop: "100%", overflow: "hidden", background: WHITE }}>
         {product.img
           ? <img src={product.img} alt={name} style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "contain", padding: 8 }} />
-          : <div style={{ position: "absolute", inset: 0, background: `linear-gradient(135deg, ${OG}, ${OG2})`, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 52 }}>🌿</div>
+          : <div style={{
+              position: "absolute", inset: 0,
+              background: "#F5F5F5",
+              display: "flex", flexDirection: "column",
+              alignItems: "center", justifyContent: "center", gap: 6,
+            }}>
+              <span style={{ fontSize: 28, opacity: .35 }}>📷</span>
+              <span style={{
+                fontSize: 11, fontWeight: 700, color: "#BDBDBD",
+                background: "#EEEEEE", borderRadius: 4,
+                padding: "3px 10px", letterSpacing: .5,
+              }}>รออัพโหลด</span>
+            </div>
         }
         {product.stock <= 10 && (
           <span style={{ position: "absolute", top: 6, left: 6, background: RED, color: WHITE, fontSize: 10, fontWeight: 700, padding: "2px 7px", borderRadius: 3 }}>
@@ -210,7 +222,7 @@ function CategoryTile({ cat, products, lang, onClick }) {
           <div key={i} style={{ aspectRatio: "1", overflow: "hidden", background: BG }}>
             {imgs[i]
               ? <img src={imgs[i].img} alt={imgs[i].name} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
-              : <div style={{ width: "100%", height: "100%", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 24 }}>{cat.icon}</div>
+              : <div style={{ width: "100%", height: "100%", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 20, color: "#BDBDBD", background: "#F5F5F5" }}>{cat.icon}</div>
             }
           </div>
         ))}

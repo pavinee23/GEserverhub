@@ -57,13 +57,14 @@ export default function LoginPage() {
         <form onSubmit={handleSubmit} noValidate>
           <div className="mb-3">
             <label className="form-label" htmlFor="email">
-              อีเมล
+              Username / Email
             </label>
             <input
               id="email"
-              type="email"
+              type="text"
               className="form-control"
-              autoComplete="email"
+              autoComplete="username"
+              placeholder="กรอก username หรือ email"
               required
               value={email}
               onChange={(e) => setEmail(e.target.value)}

@@ -157,7 +157,7 @@ function ProductCard({ product, lang, onAdd }) {
 
         {product.priceWholesale && (
           <div style={{ fontSize: 11, color: RED, fontWeight: 600, marginBottom: 4 }}>
-            ราคาส่ง ฿{product.priceWholesale.toLocaleString()} (≥{product.minWholesale} {product.unit})
+            {lang === "en" ? "Wholesale" : lang === "zh" ? "批发价" : "ราคาส่ง"} ฿{product.priceWholesale.toLocaleString()} (≥{product.minWholesale} {product.unit})
           </div>
         )}
 
@@ -247,7 +247,7 @@ function SectionHeader({ title, onViewAll, viewAllLabel }) {
 }
 
 // ─── Inner shop ────────────────────────────────────────────────────
-function ShopInner({ embedded = false }) {
+function ShopInner({ embedded = false, parentLang }) {
   const [lang, setLang] = useState("th");
   const [category, setCategory] = useState("all");
   const [search, setSearch] = useState("");
@@ -310,6 +310,11 @@ function ShopInner({ embedded = false }) {
     const saved = localStorage.getItem("goeun-agency-language");
     if (saved && ["th","en","zh"].includes(saved)) setLang(saved);
   }, []);
+
+  // Sync with parent language when provided (e.g. embedded in PageClient)
+  useEffect(() => {
+    if (parentLang && ["th","en","zh"].includes(parentLang)) setLang(parentLang);
+  }, [parentLang]);
 
   useEffect(() => {
     setLoading(true);
@@ -534,10 +539,10 @@ function ShopInner({ embedded = false }) {
   );
 }
 
-export default function ShopClient({ embedded = false }) {
+export default function ShopClient({ embedded = false, lang: parentLang }) {
   return (
     <CartProvider>
-      <ShopInner embedded={embedded} />
+      <ShopInner embedded={embedded} parentLang={parentLang} />
     </CartProvider>
   );
 }

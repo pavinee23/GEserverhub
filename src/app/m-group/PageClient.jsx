@@ -86,6 +86,10 @@ const CONTENT = {
       { no: "4", title: "สร้างระบบ Marketplace", desc: "สื่อกลางในการทำการตลาดให้ลูกค้าทุกท่าน รองรับ E-commerce ที่กำลังเติบโต" },
       { no: "5", title: "สร้างระบบการเรียนรู้ Smart Farm", desc: "รวมเทคโนโลยีใหม่ที่ทำให้เกษตรกรควบคุมปัจจัยต่างๆ วัดผลและเรียนรู้ได้" },
     ],
+    navSubtitle: "บริษัท มหาโชค มหาชัย อินเตอร์เทรด จำกัด",
+    productsPromo: "มีทุน อยากขายสินค้า นึกไม่ออก",
+    productsPromoHighlight: "นึกถึงเรา ยินดีให้คำแนะนำ",
+    contactCompany: "บริษัท มหาโชค มหาชัย อินเตอร์เทรด จำกัด",
     contactTitle: "ติดต่อเรา",
     contactCta: "เยี่ยมชมเว็บไซต์",
     footerText: "© 2026 บริษัท มหาโชค มหาชัย อินเตอร์เทรด จำกัด (M-Group). All rights reserved.",
@@ -158,6 +162,10 @@ const CONTENT = {
       { no: "4", title: "Build Marketplace Platform", desc: "B2B/B2C marketplace bridging customers to growing E-commerce." },
       { no: "5", title: "Smart Farm Learning System", desc: "New technology enabling farmers to manage, measure and learn." },
     ],
+    navSubtitle: "Mahachok Mahachai Intertrade Co., Ltd.",
+    productsPromo: "Have capital but not sure what to sell?",
+    productsPromoHighlight: "Think of us — we're happy to advise",
+    contactCompany: "Mahachok Mahachai Intertrade Co., Ltd.",
     contactTitle: "Contact Us",
     contactCta: "Visit Website",
     footerText: "© 2026 Mahachok Mahachai Intertrade Co., Ltd. (M-Group). All rights reserved.",
@@ -231,6 +239,10 @@ const CONTENT = {
       { no: "4", title: "建立电商平台", desc: "构建B2B/B2C市场平台，助力客户拓展电子商务业务。" },
       { no: "5", title: "智慧农场学习系统", desc: "引入新技术，帮助农民管理、测量和学习现代农业。" },
     ],
+    navSubtitle: "马哈坎马哈猜进出口有限公司",
+    productsPromo: "有资金但不知道卖什么？",
+    productsPromoHighlight: "想到我们 — 随时提供建议",
+    contactCompany: "马哈坎马哈猜进出口有限公司",
     contactTitle: "联系我们",
     contactCta: "访问官网",
     footerText: "© 2026 马哈坎马哈猜进出口有限公司 (M-Group). 版权所有。",
@@ -292,7 +304,7 @@ export default function PageClient() {
     }}>
       <a href="#" style={{ textDecoration: "none", display: "flex", alignItems: "center", gap: 10 }}>
         <img src="/m-group-logo.png" alt="M-Group Logo" style={{ height: 36, width: "auto", objectFit: "contain", flexShrink: 0 }} />
-        <span style={{ color: "#78350F", fontWeight: 600, fontSize: ".82rem", letterSpacing: .2 }}>บริษัท มหาโชค มหาชัย อินเตอร์เทรด จำกัด</span>
+        <span style={{ color: "#78350F", fontWeight: 600, fontSize: ".82rem", letterSpacing: .2 }}>{t.navSubtitle}</span>
       </a>
       <div style={{ display: "flex", alignItems: "center", gap: "1.2rem" }} className="d-none d-md-flex">
         {t.navLinks.map(l => (
@@ -526,7 +538,7 @@ export default function PageClient() {
           <img src="/m-group-products-banner.jpg" alt="หมวดหมู่สินค้า" style={{ width:"100%", height:"auto", display:"block" }} />
         </div>
         <p style={{ textAlign:"center", color:"rgba(28,10,0,.5)", marginTop:"2rem", fontSize:".9rem" }}>
-          มีทุน อยากขายสินค้า นึกไม่ออก — <span style={{ color:OG_D, fontWeight:700 }}>นึกถึงเรา ยินดีให้คำแนะนำ</span>
+          {t.productsPromo} — <span style={{ color:OG_D, fontWeight:700 }}>{t.productsPromoHighlight}</span>
         </p>
       </div>
     </section>
@@ -659,7 +671,7 @@ export default function PageClient() {
             fontWeight:800, fontSize:"1.05rem", marginBottom:".8rem",
             background:`linear-gradient(90deg, ${OG}, ${AMBER})`,
             WebkitBackgroundClip:"text", WebkitTextFillColor:"transparent", backgroundClip:"text",
-          }}>บริษัท มหาโชค มหาชัย อินเตอร์เทรด จำกัด</p>
+          }}>{t.contactCompany}</p>
           <p style={{ color:"#78350F", fontSize:".9rem", lineHeight:1.85, marginBottom:"1.5rem" }}>📍 {ADDRESS}</p>
           <div style={{ display:"flex", gap:"1.2rem", justifyContent:"center", flexWrap:"wrap" }}>
             <a href={"tel:" + PHONE} style={{ color:OG_D, textDecoration:"none", fontWeight:700, display:"flex", alignItems:"center", gap:5 }}>📞 {PHONE}</a>
@@ -700,7 +712,7 @@ export default function PageClient() {
       {Navbar()}
       {Hero()}
       <section id="shop">
-        <ShopClient embedded />
+        <ShopClient embedded lang={lang} />
       </section>
       {Stats()}
       {About()}

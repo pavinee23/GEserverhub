@@ -22,9 +22,10 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
 
         const identifier = credentials.email.trim();
 
-        // Search by email first, then by name (for username-style logins)
+        // Search by email, username, or name
         const user =
           (await prisma.user.findUnique({ where: { email: identifier } })) ??
+          (await prisma.user.findUnique({ where: { username: identifier } })) ??
           (await prisma.user.findFirst({ where: { name: identifier } }));
 
         if (!user || !user.password) return null;

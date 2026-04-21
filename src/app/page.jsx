@@ -18,6 +18,7 @@ import ShowcaseSection from "@/components/ShowcaseSection";
 import JourneySection from "@/components/JourneySection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
+import ResearchSection from "@/components/ResearchSection";
 
 export default function Page() {
   const [profile, setProfile] = useState(fallbackProfile);
@@ -165,6 +166,7 @@ export default function Page() {
           />
           <ServicesSection ui={ui} services={localizedServices} />
           <JourneySection ui={ui} />
+          <ResearchSection ui={ui} />
           <ContactSection ui={ui} profile={profile} />
           <Footer ui={ui} profile={profile} />
         </div>

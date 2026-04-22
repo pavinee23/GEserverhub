@@ -81,7 +81,7 @@ export const fallbackClients = [
     status: "online",
     contact_email: "it@green-retail.example.com",
     contact_phone: "02-555-1199",
-    system_url: "/customer-dashboard-login",
+    system_url: "/energy-dashboard-login",
   },
 ];
 

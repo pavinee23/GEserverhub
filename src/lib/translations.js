@@ -155,7 +155,7 @@ export const translations = {
       },
       "green-retail-group": {
         name: "Green Retail Group",
-        description: "ระบบมอนิเตอริ่ง Demo",
+        description: "ระบบมอนิเตอริ่ง ผู้ใช้ Demo",
       },
     },
   },
@@ -318,7 +318,7 @@ export const translations = {
       },
       "green-retail-group": {
         name: "Green Retail Group",
-        description: "ระบบมอนิเตอริ่ง Demo",
+        description: "ระบบมอนิเตอริ่ง ผู้ใช้ Demo",
       },
     },
   },
@@ -470,7 +470,7 @@ export const translations = {
       },
       "green-retail-group": {
         name: "Green Retail Group",
-        description: "ระบบมอนิเตอริ่ง Demo",
+        description: "ระบบมอนิเตอริ่ง ผู้ใช้ Demo",
       },
     },
   },
@@ -622,7 +622,7 @@ export const translations = {
       },
       "green-retail-group": {
         name: "Green Retail Group",
-        description: "ระบบมอนิเตอริ่ง Demo",
+        description: "ระบบมอนิเตอริ่ง ผู้ใช้ Demo",
       },
     },
   },

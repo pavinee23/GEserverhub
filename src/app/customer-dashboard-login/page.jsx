@@ -84,7 +84,7 @@ export default function CustomerDashboardLoginPage() {
             Green Retail Group
           </h1>
           <p style={{ fontSize: 13, color: '#64748b', marginTop: 8, lineHeight: 1.6 }}>
-            ระบบมอนิเตอริ่ง Demo
+            ระบบมอนิเตอริ่ง ผู้ใช้ Demo
           </p>
           <div style={{ marginTop: 10, fontSize: 12, color: '#94a3b8' }}>
             <span>it@green-retail.example.com</span>

@@ -67,7 +67,7 @@ export const fallbackClients = [
     id: 3,
     name: "Green Retail Group",
     slug: "green-retail-group",
-    description: "ระบบมอนิเตอริ่ง Demo",
+    description: "ระบบมอนิเตอริ่ง ผู้ใช้ Demo",
     status: "online",
     contact_email: "it@green-retail.example.com",
     contact_phone: "02-555-1199",

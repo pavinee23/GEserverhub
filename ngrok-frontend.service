@@ -1,0 +1,16 @@
+[Unit]
+Description=ngrok tunnel — GE Frontend (strong-dory-enabled.ngrok-free.app → port 3005)
+After=network.target geserver-frontend.service
+Wants=geserver-frontend.service
+
+[Service]
+Type=simple
+User=pavinee
+ExecStart=/usr/local/bin/ngrok start --all --config /home/pavinee/.config/ngrok/ngrok.yml
+Restart=always
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

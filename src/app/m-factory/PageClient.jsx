@@ -1304,7 +1304,13 @@ export default function PageClient() {
               background: "rgba(255,255,255,0.06)", border: "1px solid rgba(255,255,255,0.12)",
             }}>
               <div style={{ color: "#e6c040", fontWeight: 800, fontSize: "1rem", marginBottom: "0.85rem" }}>📌 ทำเล</div>
-              {["ทำเลดี เดินทางสะดวก", "พื้นที่ใช้สอยครบ รองรับธุรกิจได้จริง", "พร้อมใช้งานทันที ไม่ต้องสร้างเพิ่ม"].map(item => (
+              {[
+                "ใกล้ Future Park & Zpell รังสิต",
+                "ใกล้ ม.รังสิต และ ม.ปทุมธานี",
+                "ทำเลดี เดินทางสะดวก เข้า-ออกง่าย",
+                "พื้นที่ใช้สอยครบ รองรับธุรกิจได้จริง",
+                "พร้อมใช้งานทันที ไม่ต้องสร้างเพิ่ม",
+              ].map(item => (
                 <div key={item} style={{ color: "#e2e8f0", fontSize: "0.95rem", marginBottom: "0.4rem" }}>📌 {item}</div>
               ))}
             </div>

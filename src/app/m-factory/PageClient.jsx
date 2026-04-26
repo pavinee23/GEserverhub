@@ -1070,6 +1070,38 @@ export default function PageClient() {
               <ServiceCard key={s.title} service={s} index={i} />
             ))}
           </div>
+
+          {/* ── Service preview photos ── */}
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(3, 1fr)",
+              gap: "1rem",
+              marginTop: "2.5rem",
+            }}
+          >
+            {[
+              "/m-factory/S__26886151.jpg",
+              "/m-factory/S__27058264.jpg",
+              "/m-factory/13976.jpg",
+            ].map((src) => (
+              <div
+                key={src}
+                style={{
+                  borderRadius: "1rem",
+                  overflow: "hidden",
+                  aspectRatio: "4/3",
+                  boxShadow: "0 4px 20px rgba(15,23,42,0.1)",
+                }}
+              >
+                <img
+                  src={src}
+                  alt="M-Factory"
+                  style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 

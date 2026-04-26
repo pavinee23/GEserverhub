@@ -163,6 +163,25 @@ const CONTENT = {
     completedTitle: "โครงการที่แล้วเสร็จ พร้อมให้เช่าแล้ว วันนี้",
     completedSub: "เยี่ยมชมสถานที่จริงได้เลย · ติดต่อสอบถามได้ตลอด 24 ชม.",
     completedMapsBtn: "🗺️ ดูแผนที่โครงการ",
+    resortPriceDayLabel: "ค่าที่พัก ชั่วคราว",
+    resortPriceFrom: "เริ่มต้นเพียง",
+    resortPriceUnit: "บาท",
+    resortPriceNightLabel: "ค้างคืน",
+    saleBadge: "🔥 ขายโรงงาน / โกดังสำเร็จรูป 🔥",
+    saleHeading: "โกดังโรงงานใหม่มาก พร้อมที่พัก ครบ จบ ในที่เดียว",
+    saleLocation: "📍 คลองโซน 6 ลาดหลุมแก้ว ปทุมธานี",
+    saleImgLabels: ["หน้าอาคาร (ใกล้)", "ออฟฟิศชั้น 1", "ชั้น 3 รวมห้องน้ำ", "ด้านข้างซ้าย", "หน้าอาคาร (มุมกว้าง 1)", "หน้าอาคาร (มุมกว้าง 2)"],
+    salePriceBadge: "💥 ราคาพิเศษ",
+    salePrice: "6,900,000 บาท",
+    salePriceSub: "เจ้าของขายเอง · ไม่ผ่านนายหน้า",
+    saleSuitTitle: "✨ เหมาะสำหรับ",
+    saleSuitItems: ["โรงงานขนาดเล็ก–กลาง", "ธุรกิจ / สต๊อกสินค้า / โลจิสติกส์", "อยู่อาศัย + ทำงานในที่เดียว"],
+    salePropTitle: "🔹 รายละเอียดทรัพย์",
+    salePropItems: ["3 ห้องนอน", "3 ห้องน้ำ", "ที่จอดรถสะดวก", "พื้นที่โกดัง + โรงงาน", "ห้องออฟฟิศ", "ครัวเล็ก", "มีโฉนด ถูกต้องตามกฎหมาย"],
+    saleLocTitle: "📌 ทำเล",
+    saleLocItems: ["ใกล้ Future Park & Zpell รังสิต", "ใกล้ ม.รังสิต และ ม.ปทุมธานี", "ทำเลดี เดินทางสะดวก เข้า-ออกง่าย", "พื้นที่ใช้สอยครบ รองรับธุรกิจได้จริง", "พร้อมใช้งานทันที ไม่ต้องสร้างเพิ่ม"],
+    saleCtaCall: "☎️ โทร 095-241-1833",
+    saleCtaLine: "💬 LINE: @220fltal",
     footerText: "© 2026 M-Factory · ขาย-ให้เช่าโกดัง โรงงาน รีสอร์ทส่วนตัว",
     stats: [
       { num: "500+", label: "ลูกค้าที่ไว้วางใจ" },
@@ -244,6 +263,25 @@ const CONTENT = {
     completedTitle: "已竣工项目 · 即日起可出租",
     completedSub: "欢迎现场参观 · 全天候24小时咨询服务",
     completedMapsBtn: "🗺️ 查看项目地图",
+    resortPriceDayLabel: "日租 / 小时租",
+    resortPriceFrom: "低至",
+    resortPriceUnit: "泰铢",
+    resortPriceNightLabel: "住宿一晚",
+    saleBadge: "🔥 出售工厂/预制仓库 🔥",
+    saleHeading: "全新工厂仓库 · 含住宿 · 一站式服务",
+    saleLocation: "📍 Khlong Zone 6, Lat Lum Kaeo, Pathum Thani",
+    saleImgLabels: ["正面近景", "一楼办公室", "三楼含卫生间", "左侧外观", "正面全景 1", "正面全景 2"],
+    salePriceBadge: "💥 特惠价格",
+    salePrice: "6,900,000 泰铢",
+    salePriceSub: "业主直售 · 无中介费",
+    saleSuitTitle: "✨ 适合",
+    saleSuitItems: ["中小型工厂", "商业 / 仓储 / 物流", "居住 + 办公一体"],
+    salePropTitle: "🔹 物业详情",
+    salePropItems: ["3间卧室", "3间卫生间", "停车方便", "仓储 + 生产区", "办公室", "小型厨房", "有房产证 · 合法合规"],
+    saleLocTitle: "📌 地理位置",
+    saleLocItems: ["近 Future Park & Zpell 购物中心", "近 Rangsit 大学及帕通他尼大学", "交通便利 进出方便", "空间充足 满足商业需求", "即可入住 无需再建"],
+    saleCtaCall: "☎️ Tel: 095-241-1833",
+    saleCtaLine: "💬 LINE: @220fltal",
     footerText: "© 2026 M-Factory · 仓库 · 工厂 · 私人度假村",
     stats: [
       { num: "500+", label: "信任客户" },
@@ -325,6 +363,25 @@ const CONTENT = {
     completedTitle: "Completed Project — Ready to Rent Today",
     completedSub: "Visit the site in person · Inquiries open 24/7",
     completedMapsBtn: "🗺️ View Project on Map",
+    resortPriceDayLabel: "Day Stay",
+    resortPriceFrom: "Starting from",
+    resortPriceUnit: "Baht",
+    resortPriceNightLabel: "Overnight",
+    saleBadge: "🔥 Factory / Warehouse For Sale 🔥",
+    saleHeading: "Brand New Factory Warehouse — Live & Work in One Place",
+    saleLocation: "📍 Khlong Zone 6, Lat Lum Kaeo, Pathum Thani",
+    saleImgLabels: ["Front View (Close)", "Office Floor 1", "Floor 3 with Bathroom", "Left Side", "Front View (Wide 1)", "Front View (Wide 2)"],
+    salePriceBadge: "💥 Special Price",
+    salePrice: "6,900,000 Baht",
+    salePriceSub: "Owner Direct · No Agent Fee",
+    saleSuitTitle: "✨ Suitable For",
+    saleSuitItems: ["Small–Medium Factory", "Business / Stock / Logistics", "Live + Work in One Place"],
+    salePropTitle: "🔹 Property Details",
+    salePropItems: ["3 Bedrooms", "3 Bathrooms", "Ample Parking", "Warehouse + Factory Area", "Office Room", "Small Kitchen", "Title Deed · Legally Compliant"],
+    saleLocTitle: "📌 Location",
+    saleLocItems: ["Near Future Park & Zpell Rangsit", "Near Rangsit & Pathum Thani Universities", "Good location, easy access", "Complete facilities for real business", "Ready to use — no extra construction"],
+    saleCtaCall: "☎️ Call 095-241-1833",
+    saleCtaLine: "💬 LINE: @220fltal",
     footerText: "© 2026 M-Factory · Warehouse · Factory · Private Resort",
     stats: [
       { num: "500+", label: "Trusted Clients" },
@@ -1218,23 +1275,23 @@ export default function PageClient() {
               color: "#fff", fontWeight: 900, fontSize: "1rem", letterSpacing: "0.04em",
               boxShadow: "0 0 20px rgba(239,68,68,0.6)", marginBottom: "1rem",
             }}>
-              🔥 ขายโรงงาน / โกดังสำเร็จรูป 🔥
+              {t.saleBadge}
             </span>
             <h2 style={{ color: "#fff", fontWeight: 900, fontSize: "clamp(1.3rem,3vw,2rem)", margin: "0.5rem 0 0.25rem" }}>
-              โกดังโรงงานใหม่มาก พร้อมที่พัก ครบ จบ ในที่เดียว
+              {t.saleHeading}
             </h2>
-            <p style={{ color: "#94a3b8", fontSize: "1rem", margin: 0 }}>📍 คลองโซน 6 ลาดหลุมแก้ว ปทุมธานี</p>
+            <p style={{ color: "#94a3b8", fontSize: "1rem", margin: 0 }}>{t.saleLocation}</p>
           </div>
 
           {/* Image grid */}
           <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "0.75rem", marginBottom: "2.5rem" }}>
             {[
-              { src: "/m-factory/sale-1.jpg", label: "หน้าอาคาร (ใกล้)" },
-              { src: "/m-factory/sale-2.jpg", label: "ออฟฟิศชั้น 1" },
-              { src: "/m-factory/sale-3.jpg", label: "ชั้น 3 รวมห้องน้ำ" },
-              { src: "/m-factory/sale-4.jpg", label: "ด้านข้างซ้าย" },
-              { src: "/m-factory/sale-5.jpg", label: "หน้าอาคาร (มุมกว้าง 1)" },
-              { src: "/m-factory/sale-6.jpg", label: "หน้าอาคาร (มุมกว้าง 2)" },
+              { src: "/m-factory/sale-1.jpg", label: t.saleImgLabels[0] },
+              { src: "/m-factory/sale-2.jpg", label: t.saleImgLabels[1] },
+              { src: "/m-factory/sale-3.jpg", label: t.saleImgLabels[2] },
+              { src: "/m-factory/sale-4.jpg", label: t.saleImgLabels[3] },
+              { src: "/m-factory/sale-5.jpg", label: t.saleImgLabels[4] },
+              { src: "/m-factory/sale-6.jpg", label: t.saleImgLabels[5] },
             ].map(({ src, label }, i) => (
               <div key={src} style={{
                 borderRadius: "0.875rem", overflow: "hidden",
@@ -1270,9 +1327,9 @@ export default function PageClient() {
               background: "linear-gradient(135deg, #c9a227 0%, #e6c040 50%, #c9a227 100%)",
               boxShadow: "0 0 40px rgba(201,162,39,0.5), 0 8px 32px rgba(201,162,39,0.3)",
             }}>
-              <div style={{ color: "#0f172a", fontSize: "0.85rem", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase" }}>💥 ราคาพิเศษ</div>
-              <div style={{ color: "#0f172a", fontSize: "clamp(1.8rem,5vw,2.8rem)", fontWeight: 900, lineHeight: 1.1 }}>6,900,000 บาท</div>
-              <div style={{ color: "#78350f", fontSize: "0.9rem", fontWeight: 600 }}>เจ้าของขายเอง · ไม่ผ่านนายหน้า</div>
+              <div style={{ color: "#0f172a", fontSize: "0.85rem", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase" }}>{t.salePriceBadge}</div>
+              <div style={{ color: "#0f172a", fontSize: "clamp(1.8rem,5vw,2.8rem)", fontWeight: 900, lineHeight: 1.1 }}>{t.salePrice}</div>
+              <div style={{ color: "#78350f", fontSize: "0.9rem", fontWeight: 600 }}>{t.salePriceSub}</div>
             </div>
           </div>
 
@@ -1283,8 +1340,8 @@ export default function PageClient() {
               padding: "1.5rem", borderRadius: "1rem",
               background: "rgba(255,255,255,0.06)", border: "1px solid rgba(255,255,255,0.12)",
             }}>
-              <div style={{ color: "#e6c040", fontWeight: 800, fontSize: "1rem", marginBottom: "0.85rem" }}>✨ เหมาะสำหรับ</div>
-              {["โรงงานขนาดเล็ก–กลาง", "ธุรกิจ / สต๊อกสินค้า / โลจิสติกส์", "อยู่อาศัย + ทำงานในที่เดียว"].map(item => (
+              <div style={{ color: "#e6c040", fontWeight: 800, fontSize: "1rem", marginBottom: "0.85rem" }}>{t.saleSuitTitle}</div>
+              {t.saleSuitItems.map(item => (
                 <div key={item} style={{ color: "#e2e8f0", fontSize: "0.95rem", marginBottom: "0.4rem" }}>✔ {item}</div>
               ))}
             </div>
@@ -1293,8 +1350,8 @@ export default function PageClient() {
               padding: "1.5rem", borderRadius: "1rem",
               background: "rgba(255,255,255,0.06)", border: "1px solid rgba(255,255,255,0.12)",
             }}>
-              <div style={{ color: "#e6c040", fontWeight: 800, fontSize: "1rem", marginBottom: "0.85rem" }}>🔹 รายละเอียดทรัพย์</div>
-              {["3 ห้องนอน", "3 ห้องน้ำ", "ที่จอดรถสะดวก", "พื้นที่โกดัง + โรงงาน", "ห้องออฟฟิศ", "ครัวเล็ก", "มีโฉนด ถูกต้องตามกฎหมาย"].map(item => (
+              <div style={{ color: "#e6c040", fontWeight: 800, fontSize: "1rem", marginBottom: "0.85rem" }}>{t.salePropTitle}</div>
+              {t.salePropItems.map(item => (
                 <div key={item} style={{ color: "#e2e8f0", fontSize: "0.95rem", marginBottom: "0.4rem" }}>✅ {item}</div>
               ))}
             </div>
@@ -1303,14 +1360,8 @@ export default function PageClient() {
               padding: "1.5rem", borderRadius: "1rem",
               background: "rgba(255,255,255,0.06)", border: "1px solid rgba(255,255,255,0.12)",
             }}>
-              <div style={{ color: "#e6c040", fontWeight: 800, fontSize: "1rem", marginBottom: "0.85rem" }}>📌 ทำเล</div>
-              {[
-                "ใกล้ Future Park & Zpell รังสิต",
-                "ใกล้ ม.รังสิต และ ม.ปทุมธานี",
-                "ทำเลดี เดินทางสะดวก เข้า-ออกง่าย",
-                "พื้นที่ใช้สอยครบ รองรับธุรกิจได้จริง",
-                "พร้อมใช้งานทันที ไม่ต้องสร้างเพิ่ม",
-              ].map(item => (
+              <div style={{ color: "#e6c040", fontWeight: 800, fontSize: "1rem", marginBottom: "0.85rem" }}>{t.saleLocTitle}</div>
+              {t.saleLocItems.map(item => (
                 <div key={item} style={{ color: "#e2e8f0", fontSize: "0.95rem", marginBottom: "0.4rem" }}>📌 {item}</div>
               ))}
             </div>
@@ -1325,7 +1376,7 @@ export default function PageClient() {
               color: "#fff", fontWeight: 800, fontSize: "1.05rem", textDecoration: "none",
               boxShadow: "0 6px 24px rgba(34,197,94,0.45)",
             }}>
-              ☎️ โทร 095-241-1833
+              {t.saleCtaCall}
             </a>
             <a href="https://lin.ee/xrAU8PC" target="_blank" rel="noopener noreferrer" style={{
               display: "inline-flex", alignItems: "center", gap: "0.5rem",
@@ -1334,7 +1385,7 @@ export default function PageClient() {
               color: "#fff", fontWeight: 800, fontSize: "1.05rem", textDecoration: "none",
               boxShadow: "0 6px 24px rgba(14,165,233,0.45)",
             }}>
-              💬 LINE: @220fltal
+              {t.saleCtaLine}
             </a>
           </div>
         </div>
@@ -1376,8 +1427,8 @@ export default function PageClient() {
             }}>
               <span style={{ fontSize: "1.4rem" }}>🌅</span>
               <div>
-                <div style={{ fontSize: "0.72rem", color: "#92400e", fontWeight: 700, letterSpacing: "0.06em", textTransform: "uppercase" }}>ค่าที่พัก ชั่วคราว</div>
-                <div style={{ fontSize: "1.15rem", fontWeight: 900, color: "#b45309" }}>เริ่มต้นเพียง <span style={{ color: "#d97706", fontSize: "1.35rem" }}>300</span> บาท</div>
+                <div style={{ fontSize: "0.72rem", color: "#92400e", fontWeight: 700, letterSpacing: "0.06em", textTransform: "uppercase" }}>{t.resortPriceDayLabel}</div>
+                <div style={{ fontSize: "1.15rem", fontWeight: 900, color: "#b45309" }}>{t.resortPriceFrom} <span style={{ color: "#d97706", fontSize: "1.35rem" }}>300</span> {t.resortPriceUnit}</div>
               </div>
             </div>
             <div style={{
@@ -1389,8 +1440,8 @@ export default function PageClient() {
             }}>
               <span style={{ fontSize: "1.4rem" }}>🌙</span>
               <div>
-                <div style={{ fontSize: "0.72rem", color: "#1e3a8a", fontWeight: 700, letterSpacing: "0.06em", textTransform: "uppercase" }}>ค้างคืน</div>
-                <div style={{ fontSize: "1.15rem", fontWeight: 900, color: "#1d4ed8" }}>เริ่มต้นเพียง <span style={{ color: "#2563eb", fontSize: "1.35rem" }}>800</span> บาท</div>
+                <div style={{ fontSize: "0.72rem", color: "#1e3a8a", fontWeight: 700, letterSpacing: "0.06em", textTransform: "uppercase" }}>{t.resortPriceNightLabel}</div>
+                <div style={{ fontSize: "1.15rem", fontWeight: 900, color: "#1d4ed8" }}>{t.resortPriceFrom} <span style={{ color: "#2563eb", fontSize: "1.35rem" }}>800</span> {t.resortPriceUnit}</div>
               </div>
             </div>
           </div>

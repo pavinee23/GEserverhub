@@ -1459,7 +1459,7 @@ export default function PageClient() {
               </div>
               <div style={{ borderRadius: "0.9rem", overflow: "hidden", marginBottom: "1.25rem", border: "1px solid rgba(255,255,255,0.1)" }}>
                 <iframe
-                  src="https://maps.google.com/maps?q=13.99537020328643,100.38539160043001&output=embed&z=16"
+                  src="https://maps.google.com/maps?q=14.0033987,100.3960986&output=embed&z=16"
                   width="100%"
                   height="240"
                   style={{ border: 0, display: "block" }}
@@ -1470,7 +1470,7 @@ export default function PageClient() {
                 />
               </div>
               <a
-                href="https://maps.google.com/maps?q=13.99537020328643,100.38539160043001"
+                href="https://www.google.com/maps/dir//%E0%B8%A3%E0%B8%B5%E0%B8%AA%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%97%E0%B9%83%E0%B8%81%E0%B8%A5%E0%B9%89%E0%B8%89%E0%B8%B1%E0%B8%99+%E0%B9%80%E0%B8%AD%E0%B9%87%E0%B8%A1%E0%B8%A3%E0%B8%B5%E0%B8%AA%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%97+%E0%B9%80%E0%B8%AD%E0%B9%87%E0%B8%A1%E0%B8%A3%E0%B8%B5%E0%B8%AA%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%97+222+%E0%B8%8B%E0%B8%AD%E0%B8%A2+%E0%B8%84%E0%B8%A5%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%8B%E0%B8%99+6+%E0%B8%95%E0%B8%B3%E0%B8%9A%E0%B8%A5+%E0%B8%A5%E0%B8%B2%E0%B8%94%E0%B8%AB%E0%B8%A5%E0%B8%B8%E0%B8%A1%E0%B9%81%E0%B8%81%E0%B9%89%E0%B8%A7+%E0%B8%AD%E0%B8%B3%E0%B9%80%E0%B8%A0%E0%B8%AD%E0%B8%A5%E0%B8%B2%E0%B8%94%E0%B8%AB%E0%B8%A5%E0%B8%B8%E0%B8%A1%E0%B9%81%E0%B8%81%E0%B9%89%E0%B8%A7+%E0%B8%9B%E0%B8%97%E0%B8%B8%E0%B8%A1%E0%B8%98%E0%B8%B2%E0%B8%99%E0%B8%B5+12140+%E0%B9%84%E0%B8%97%E0%B8%A2/data=!4m8!4m7!1m0!1m5!1m1!1s0x30e2894cd7823cdd:0xc1fa41978d8c6b19!2m2!1d100.3960986!2d14.0033987?entry=ttu&g_ep=EgoyMDI2MDQyMi4wIKXMDSoASAFQAw%3D%3D"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{

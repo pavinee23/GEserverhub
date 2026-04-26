@@ -362,72 +362,6 @@ const CONTENT = {
       { name: "Mr. Rattanapol C.", role: "Factory Rental", text: "Factory with 3-phase power and full water systems. Made expanding my business easy.", rating: 5, avatar: "👨‍🔬", date: "Apr 25" },
     ],
   },
-  ko: {
-    navServices: "서비스",
-    navGallery: "갤러리",
-    navResort: "리조트 사진",
-    navContact: "문의하기",
-    brandSub: "창고 · 공장 · 리조트",
-    heroBadge: "Premium Industrial & Resort",
-    heroTitle: "M-Factory",
-    heroLine1: "창고 및 조립식 공장 매매/임대",
-    heroLine2: "개인 리조트 숙박 서비스",
-    heroCta: "문의하기",
-    heroLearnMore: "서비스 보기",
-    servicesBadge: "서비스 소개",
-    servicesHeading: "모든 공간 요구를 한 곳에서",
-    galleryBadge: "프로젝트 갤러리",
-    galleryHeading: "건설 중인 창고 및 공장",
-    galleryCta: "🚨 창고 임대/구매 문의 — 클릭!!",
-    resortBadge: "리조트 사진",
-    resortHeading: "프라이빗 리조트 — 조용하고 독점적인",
-    bookBtn: "🏨 숙박 예약 — 클릭!!",
-    contactBadge: "연락하기",
-    contactHeading: "M-Factory 연락처",
-    contactSub: "공간 임대 또는 구매에 관심이 있으신가요? 지금 문의하세요",
-    qrLabel: "QR 코드를 스캔하여 LINE으로 연락",
-    addressName: "M-Factory & M-Resort",
-    addressLine1: "16 Rahang, Soi Khunphinit, Lat Lum Kaeo",
-    addressLine2: "Pathum Thani 12140, Thailand",
-    mapsBtn: "Google 지도 보기",
-    completedBadge: "✅ 임대 가능",
-    completedTitle: "완공된 프로젝트 · 지금 바로 임대 가능",
-    completedSub: "현장 방문 환영 · 24시간 문의 가능",
-    completedMapsBtn: "🗺️ 프로젝트 위치 보기",
-    footerText: "© 2026 M-Factory · 창고 · 공장 · 프라이빗 리조트",
-    stats: [
-      { num: "500+", label: "신뢰 고객" },
-      { num: "10+", label: "년 경험" },
-      { num: "24/7", label: "보안 서비스" },
-      { num: "3", label: "서비스 종류" },
-    ],
-    services: [
-      { icon: "🏭", title: "창고 임대", desc: "24시간 보안 시스템을 갖춘 다양한 규모의 창고. 모든 종류의 상품 및 자재 보관에 적합합니다." },
-      { icon: "🏗️", title: "공장 매매/임대", desc: "완벽한 전기 시스템을 갖춘 즉시 사용 가능한 공장. 임대 및 매매 모두 가능합니다." },
-      { icon: "🏖️", title: "프라이빗 리조트", desc: "휴식 및 기업 행사를 위한 프라이빗 리조트 숙박. 조용하고 아늑한 환경을 제공합니다." },
-    ],
-    reviewsBadge: "고객 후기",
-    reviewsHeading: "실제 고객의 목소리",
-    reviewsSub: "500명 이상의 만족 고객 · 평균 평점 4.9 / 5.0",
-    reviewsTotal: "총 후기",
-    reviewsVerified: "✓ 인증됨",
-    reviews: [
-      { name: "Somchai P. 씨", role: "창고 임대", text: "깨끗하고 넓은 창고, 세심한 직원, 24시간 보안. 정말 안심됩니다.", rating: 5, avatar: "👨‍💼", date: "3월 25" },
-      { name: "태국 물류 회사", role: "창고 임대", text: "2년째 이용 중입니다. 좋은 위치, 편리한 트럭 접근, 필요한 모든 것을 갖췄습니다.", rating: 5, avatar: "🏢", date: "2월 25" },
-      { name: "Wilaiporn S. 씨", role: "공장 임대", text: "전기 시스템이 완비된 공장, 즉시 사용 가능. 가성비가 탁월합니다.", rating: 5, avatar: "👩‍💼", date: "4월 25" },
-      { name: "Thanathorn W. 씨", role: "리조트 숙박", text: "평화롭고 아름다운 분위기, 가족 여행에 완벽합니다. 매우 인상적입니다!", rating: 5, avatar: "👨", date: "1월 25" },
-      { name: "Amporn S. 씨", role: "창고 임대", text: "합리적인 가격, 주요 도로 인근 최고의 위치. 중소기업에 완벽합니다.", rating: 5, avatar: "👩", date: "3월 25" },
-      { name: "이산 수입 회사", role: "공장 임대", text: "산업용으로 준비된 표준 공장. 팀의 훌륭한 조언으로 사업 확장이 쉬워졌습니다.", rating: 5, avatar: "🏭", date: "2월 25" },
-      { name: "Pichai R. 씨", role: "기업 행사", text: "회사 세미나를 여기서 개최했습니다. 아름다운 장소, 탁월한 서비스, 모든 참석자가 만족했습니다.", rating: 5, avatar: "👨‍💻", date: "4월 25" },
-      { name: "Nantida P. 씨", role: "창고 임대", text: "CCTV 완비, 24시간 직원 상주. 제 물건이 항상 안전합니다.", rating: 5, avatar: "👩‍💼", date: "1월 25" },
-      { name: "Prasert T. 씨", role: "공장 임대", text: "3년 연속 이용, 한 번도 실망한 적 없습니다. 좋은 가격, 훌륭한 팀.", rating: 5, avatar: "👨‍🔧", date: "3월 25" },
-      { name: "Supaporn W. 씨", role: "리조트 숙박", text: "훌륭한 시설, 멋진 분위기. 아이들과 함께 왔고 모두 좋아했습니다. 다시 올 것입니다!", rating: 5, avatar: "👩", date: "2월 25" },
-      { name: "프리미엄 스토리지", role: "창고 임대", text: "고속도로 인근 이상적인 위치, 대형 트럭 접근 용이. 물류에 완벽합니다.", rating: 5, avatar: "🏢", date: "4월 25" },
-      { name: "Mana C. 씨", role: "창고 임대", text: "우수한 보안 시스템, 친절한 직원, 신속한 대응. 모든 돈의 가치가 있습니다.", rating: 5, avatar: "👨", date: "1월 25" },
-      { name: "Kanokwan S. 씨", role: "리조트 숙박", text: "아름다운 전망, 조용하고 평온한 환경, 휴일 휴식에 완벽합니다. 강력 추천!", rating: 5, avatar: "👩‍🎨", date: "3월 25" },
-      { name: "Rattanapol C. 씨", role: "공장 임대", text: "3상 전원 및 완벽한 수도 시스템을 갖춘 공장. 사업 확장이 쉬워졌습니다.", rating: 5, avatar: "👨‍🔬", date: "4월 25" },
-    ],
-  },
 };
 
 /* ─── Section Header ─────────────────────────────────────── */
@@ -844,7 +778,7 @@ export default function PageClient() {
               {t.navContact}
             </a>
             <div style={{ display: "flex", gap: 4 }}>
-              {[["th", "TH"], ["en", "EN"], ["zh", "中文"], ["ko", "KO"]].map(([l, label]) => (
+              {[["th", "TH"], ["en", "EN"], ["zh", "中文"]].map(([l, label]) => (
                 <button key={l} onClick={() => setLang(l)}
                   style={{
                     padding: "0.45rem 0.75rem",
@@ -863,7 +797,7 @@ export default function PageClient() {
         ) : (
           <div style={{ display: "flex", alignItems: "center", gap: "0.6rem" }}>
             <div style={{ display: "flex", gap: 3 }}>
-              {[["th", "TH"], ["en", "EN"], ["zh", "中"], ["ko", "KO"]].map(([l, label]) => (
+              {[["th", "TH"], ["en", "EN"], ["zh", "中"]].map(([l, label]) => (
                 <button key={l} onClick={() => setLang(l)}
                   style={{
                     padding: "0.3rem 0.55rem",

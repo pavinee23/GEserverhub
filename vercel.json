@@ -28,6 +28,16 @@
       "source": "/energy-dashboard/:path*",
       "destination": "https://strong-dory-enabled.ngrok-free.app/energy-dashboard/:path*",
       "permanent": false
+    },
+    {
+      "source": "/cargo/track",
+      "destination": "https://strong-dory-enabled.ngrok-free.app/cargo/track",
+      "permanent": false
+    },
+    {
+      "source": "/cargo/:path*",
+      "destination": "https://strong-dory-enabled.ngrok-free.app/cargo/:path*",
+      "permanent": false
     }
   ]
 }

@@ -1108,16 +1108,21 @@ export default function PageClient() {
               {/* Badge */}
               <span
                 style={{
-                  display: "inline-block",
-                  padding: "0.35rem 1rem",
+                  display: "inline-flex",
+                  alignItems: "center",
+                  gap: "0.4rem",
+                  padding: "0.55rem 1.4rem",
                   borderRadius: 999,
-                  background: "linear-gradient(90deg, #c9a227, #e6c040)",
-                  color: "#0f172a",
-                  fontWeight: 800,
-                  fontSize: "0.82rem",
-                  letterSpacing: "0.1em",
-                  textTransform: "uppercase",
+                  background: "linear-gradient(90deg, #16a34a, #22c55e, #86efac, #22c55e, #16a34a)",
+                  backgroundSize: "200% auto",
+                  animation: "badgeShine 2.5s linear infinite",
+                  color: "#fff",
+                  fontWeight: 900,
+                  fontSize: "1.05rem",
+                  letterSpacing: "0.04em",
                   whiteSpace: "nowrap",
+                  boxShadow: "0 0 18px rgba(34,197,94,0.7), 0 0 40px rgba(34,197,94,0.35)",
+                  textShadow: "0 1px 6px rgba(0,0,0,0.3)",
                 }}
               >
                 {t.completedBadge}
@@ -1182,9 +1187,16 @@ export default function PageClient() {
               "/m-factory/S__27058264.jpg",
               "/m-factory/S__26886151.jpg",
               "/m-factory/13976.jpg",
-            ].map((src) => (
+            ].map((src, i) => (
               <div key={src} style={{ borderRadius: "1.25rem", overflow: "hidden", boxShadow: "0 6px 32px rgba(15,23,42,0.13)" }}>
-                <img src={src} alt="M-Factory โครงการพร้อมให้เช่า" style={{ width: "100%", height: "auto", display: "block" }} />
+                <img
+                  src={src}
+                  alt="M-Factory โครงการพร้อมให้เช่า"
+                  style={{
+                    width: "100%", height: "auto", display: "block",
+                    filter: i === 0 ? "brightness(1.12) saturate(1.35) contrast(1.08)" : "none",
+                  }}
+                />
               </div>
             ))}
           </div>

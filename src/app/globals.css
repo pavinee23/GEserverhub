@@ -2052,6 +2052,11 @@ img {
   to   { stroke-dashoffset: 0; }
 }
 
+@keyframes badgeShine {
+  0%   { background-position: 0% center; }
+  100% { background-position: 200% center; }
+}
+
 /* ── Sidebar entrance ── */
 .agency-sidebar {
   animation: ge-slide-left 0.5s cubic-bezier(0.16, 1, 0.3, 1) both;

@@ -1140,32 +1140,24 @@ export default function PageClient() {
           <div
             style={{
               display: "grid",
-              gridTemplateColumns: "repeat(3, 1fr)",
+              gridTemplateColumns: "1fr 1.7fr 1fr",
               gap: "1rem",
               marginTop: "1.25rem",
+              alignItems: "center",
             }}
           >
-            {[
-              "/m-factory/S__26886151.jpg",
-              "/m-factory/S__27058264.jpg",
-              "/m-factory/13976.jpg",
-            ].map((src) => (
-              <div
-                key={src}
-                style={{
-                  borderRadius: "1rem",
-                  overflow: "hidden",
-                  aspectRatio: "4/3",
-                  boxShadow: "0 4px 20px rgba(15,23,42,0.1)",
-                }}
-              >
-                <img
-                  src={src}
-                  alt="M-Factory โครงการพร้อมให้เช่า"
-                  style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
-                />
-              </div>
-            ))}
+            {/* Left */}
+            <div style={{ borderRadius: "1rem", overflow: "hidden", aspectRatio: "3/4", boxShadow: "0 4px 20px rgba(15,23,42,0.1)" }}>
+              <img src="/m-factory/S__26886151.jpg" alt="M-Factory โครงการพร้อมให้เช่า" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
+            </div>
+            {/* Center — large & prominent */}
+            <div style={{ borderRadius: "1.25rem", overflow: "hidden", aspectRatio: "4/3", boxShadow: "0 12px 48px rgba(15,23,42,0.22)", transform: "scale(1.05)", zIndex: 1, position: "relative" }}>
+              <img src="/m-factory/S__27058264.jpg" alt="M-Factory โครงการพร้อมให้เช่า" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
+            </div>
+            {/* Right */}
+            <div style={{ borderRadius: "1rem", overflow: "hidden", aspectRatio: "3/4", boxShadow: "0 4px 20px rgba(15,23,42,0.1)" }}>
+              <img src="/m-factory/13976.jpg" alt="M-Factory โครงการพร้อมให้เช่า" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
+            </div>
           </div>
         </div>
       </section>

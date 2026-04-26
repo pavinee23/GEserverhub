@@ -60,7 +60,7 @@ function injectStyle() {
   _injected = true;
 }
 
-/* Layout: row1 [wide, tall], row2 [3 equal], row3 [tall, wide], row4 [extra 3] */
+/* Layout: row1 [wide, tall], row2 [3 equal], row3 [tall, wide] */
 const IMAGES = [
   { src: "/m-factory/LINE_ALBUM_12369_260417_1.jpg", cls: "gc-2" },
   { src: "/m-factory/LINE_ALBUM_12369_260417_2.jpg", cls: "gc-1" },
@@ -69,9 +69,6 @@ const IMAGES = [
   { src: "/m-factory/LINE_ALBUM_12369_260417_5.jpg", cls: "gc-1" },
   { src: "/m-factory/LINE_ALBUM_12369_260417_6.jpg", cls: "gc-1" },
   { src: "/m-factory/LINE_ALBUM_12369_260417_7.jpg", cls: "gc-2" },
-  { src: "/m-factory/13976.jpg",       cls: "gc-1" },
-  { src: "/m-factory/S__26886151.jpg", cls: "gc-1" },
-  { src: "/m-factory/S__27058264.jpg", cls: "gc-1" },
 ];
 
 export default function GalleryGrid() {

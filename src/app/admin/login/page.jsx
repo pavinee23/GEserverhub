@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { signIn } from "next-auth/react";
+import { signIn, signOut } from "next-auth/react";
 import { useRouter } from "next/navigation";
 
 export default function AdminLoginPage() {
@@ -18,28 +18,28 @@ export default function AdminLoginPage() {
     setLoading(true);
 
     const res = await signIn("credentials", {
-      email,
+      email: email.trim(),
       password,
       redirect: false,
     });
 
-    setLoading(false);
-
-    if (res?.error) {
+    if (!res?.ok || res?.error) {
+      setLoading(false);
       setError("อีเมลหรือรหัสผ่านไม่ถูกต้อง");
       return;
     }
 
-    // Verify role via session — fetch session to check
+    // Fetch session to verify admin role
     const sessionRes = await fetch("/api/auth/session");
     const session = await sessionRes.json();
     const role = session?.user?.role;
 
+    setLoading(false);
+
     if (role === "SUPER_ADMIN" || role === "ADMIN") {
       router.push("/admin/clients");
     } else {
-      // Not an admin — sign out and show error
-      await fetch("/api/auth/signout", { method: "POST" });
+      await signOut({ redirect: false });
       setError("บัญชีนี้ไม่มีสิทธิ์เข้าถึงระบบผู้ดูแล");
     }
   }

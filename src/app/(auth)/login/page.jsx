@@ -19,19 +19,29 @@ export default function LoginPage() {
     setLoading(true);
 
     const res = await signIn("credentials", {
-      email,
+      email: email.trim(),
       password,
       redirect: false,
     });
 
-    setLoading(false);
-
-    if (res?.error) {
+    if (!res?.ok || res?.error) {
+      setLoading(false);
       setError("อีเมลหรือรหัสผ่านไม่ถูกต้อง");
       return;
     }
 
-    router.push("/mct-product");
+    // Redirect based on role
+    const sessionRes = await fetch("/api/auth/session");
+    const session = await sessionRes.json();
+    const role = session?.user?.role;
+
+    setLoading(false);
+
+    if (role === "SUPER_ADMIN" || role === "ADMIN") {
+      router.push("/admin/clients");
+    } else {
+      router.push("/mct-product");
+    }
   }
 
   return (

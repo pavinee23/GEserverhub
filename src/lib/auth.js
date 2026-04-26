@@ -8,7 +8,22 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
   adapter: PrismaAdapter(prisma),
   session: { strategy: "jwt" },
   trustHost: true,
+  useSecureCookies: false,
   debug: process.env.NODE_ENV === "development",
+  cookies: {
+    sessionToken: {
+      name: "authjs.session-token",
+      options: { httpOnly: true, sameSite: "lax", path: "/", secure: false },
+    },
+    csrfToken: {
+      name: "authjs.csrf-token",
+      options: { httpOnly: false, sameSite: "lax", path: "/", secure: false },
+    },
+    callbackUrl: {
+      name: "authjs.callback-url",
+      options: { httpOnly: true, sameSite: "lax", path: "/", secure: false },
+    },
+  },
   pages: {
     signIn: "/login",
   },

@@ -1177,8 +1177,8 @@ export default function PageClient() {
               "/m-factory/S__26886151.jpg",
               "/m-factory/13976.jpg",
             ].map((src) => (
-              <div key={src} style={{ borderRadius: "1.25rem", overflow: "hidden", aspectRatio: "16/7", boxShadow: "0 6px 32px rgba(15,23,42,0.13)" }}>
-                <img src={src} alt="M-Factory โครงการพร้อมให้เช่า" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
+              <div key={src} style={{ borderRadius: "1.25rem", overflow: "hidden", boxShadow: "0 6px 32px rgba(15,23,42,0.13)" }}>
+                <img src={src} alt="M-Factory โครงการพร้อมให้เช่า" style={{ width: "100%", height: "auto", display: "block" }} />
               </div>
             ))}
           </div>

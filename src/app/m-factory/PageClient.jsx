@@ -1227,21 +1227,37 @@ export default function PageClient() {
           </div>
 
           {/* Image grid */}
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "0.85rem", marginBottom: "2.5rem" }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "0.75rem", marginBottom: "2.5rem" }}>
             {[
-              "/m-factory/sale-1.jpg",
-              "/m-factory/sale-2.jpg",
-              "/m-factory/sale-3.jpg",
-              "/m-factory/sale-4.jpg",
-              "/m-factory/sale-5.jpg",
-              "/m-factory/sale-6.jpg",
-            ].map((src, i) => (
+              { src: "/m-factory/sale-1.jpg", label: "หน้าอาคาร (ใกล้)" },
+              { src: "/m-factory/sale-2.jpg", label: "ออฟฟิศชั้น 1" },
+              { src: "/m-factory/sale-3.jpg", label: "ชั้น 3 รวมห้องน้ำ" },
+              { src: "/m-factory/sale-4.jpg", label: "ด้านข้างซ้าย" },
+              { src: "/m-factory/sale-5.jpg", label: "หน้าอาคาร (มุมกว้าง 1)" },
+              { src: "/m-factory/sale-6.jpg", label: "หน้าอาคาร (มุมกว้าง 2)" },
+            ].map(({ src, label }, i) => (
               <div key={src} style={{
-                borderRadius: "1rem", overflow: "hidden",
-                boxShadow: "0 6px 30px rgba(0,0,0,0.35)",
-                gridColumn: i === 0 ? "span 2" : "span 1",
+                borderRadius: "0.875rem", overflow: "hidden",
+                boxShadow: "0 4px 20px rgba(0,0,0,0.4)",
+                position: "relative",
+                aspectRatio: "4/3",
               }}>
-                <img src={src} alt={`โรงงานขาย ${i + 1}`} style={{ width: "100%", height: "100%", objectFit: "cover", display: "block", minHeight: i === 0 ? 280 : 200 }} />
+                <img
+                  src={src}
+                  alt={label}
+                  style={{
+                    width: "100%", height: "100%", objectFit: "cover", display: "block",
+                    filter: "brightness(1.1) saturate(1.25) contrast(1.05)",
+                  }}
+                />
+                <div style={{
+                  position: "absolute", bottom: 0, left: 0, right: 0,
+                  background: "linear-gradient(transparent, rgba(0,0,0,0.72))",
+                  padding: "0.5rem 0.75rem",
+                  color: "#fff", fontSize: "0.78rem", fontWeight: 700,
+                }}>
+                  {label}
+                </div>
               </div>
             ))}
           </div>

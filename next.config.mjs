@@ -22,6 +22,7 @@ const nextConfig = {
     "/api/ctm/upload": ["./public/uploads/**"],
     "/api/ge-energy-tech/meter-order": ["./public/uploads/**"],
     "/api/ge-energy-tech/order-tracking": ["./public/uploads/**"],
+    "/api/uploads/ctm-products/**/*": ["./public/uploads/**"],
   },
   // Allow browsers hitting dev via WSL/LAN IP (e.g. http://172.20.24.10:3005)
   allowedDevOrigins: [
